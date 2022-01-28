@@ -11,10 +11,6 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
-app.use('/', (req, res) => {
-	res.send('hello');
-});
-
 app.use('/people', peopleRoutes);
 app.use('/planets', planetRoutes);
 app.use('/starships', starshipRoutes);
