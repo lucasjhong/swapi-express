@@ -7,7 +7,7 @@ import planetRoutes from './routes/planets.js';
 import starshipRoutes from './routes/starships.js';
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
